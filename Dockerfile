@@ -3,6 +3,7 @@ ENV GO111MODULE=off
 RUN apk update
 RUN apk add git
 RUN go get github.com/Masterminds/glide
+RUN go get go.uber.org/automaxprocs
 WORKDIR /go/src/github.com/jirwin/burrow_exporter
 COPY . /go/src/github.com/jirwin/burrow_exporter
 RUN glide install
