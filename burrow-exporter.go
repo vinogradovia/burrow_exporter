@@ -1,5 +1,7 @@
 package main
 
+import _ "go.uber.org/automaxprocs"
+
 import (
 	"fmt"
 	"os"
